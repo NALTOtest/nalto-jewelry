@@ -1,55 +1,51 @@
-Nalto Jewelry System 💍
-A FiveM QBCore jewelry system that allows players to equip, craft, and manage magical rings with unique buffs and effects.
+Nalto Jewelry System 💍 (OPEN SOURCE)
+A comprehensive jewelry system for the FiveM QBCore framework, allowing players to equip, craft, and repair magical rings with unique buffs and effects.
 
-Features
-✅ Wearable Rings with Buffs – Players can equip different rings to gain special abilities like increased armor, stamina, health regen, or money boosts.
-✅ Ring Durability System – Rings degrade over time and can be repaired at a jeweler shop.
-✅ Crafting & Materials – Players can craft rings using special materials from a dedicated jewelry shop.
-✅ Buff System – Rings provide active buffs (e.g., faster swimming, sprint boosts, stress relief, extra armor).
-✅ Stash & Inventory Integration – Uses ps-inventory for stash management and validation.
-✅ Persistence & Server Restart Safety – Rings are returned to players after a server restart, even if they logged out before the restart.
+🌟 Features
+Wearable Rings with Buffs – Equip rings to gain special abilities (e.g., armor boost, stamina, stress relief).
+Ring Durability System – Rings wear down over time and need repairs at a jeweler NPC.
+Crafting System – Players can craft rings using materials like wax molds, metal ingots, and polishing compounds.
+Multiple Buff Effects – Rings provide unique buffs such as armor regen, money multipliers, and sprint speed boosts.
+Inventory & Stash Integration – Uses ps-inventory for ring storage and validation.
+Persistence & Server Restart Safety – Rings are saved to the database, ensuring players don't lose them after a restart.
+📋 Dependencies
+Required resources:
 
+- [qb-core](https://github.com/qbcore-framework/qb-core)
+- [qb-target](https://github.com/qbcore-framework/qb-target)
+Jewelry MLO (optional) – Needed for ring crafting & repairs.
 
-..MLO NEEDS TO BE ADDED TO REPAIR/MAKE RINGS UNLESS YOU MOVE EACH LOCATION AND HASH..
+⚙️ Configuration
+This script includes configurable options in config.lua:
 
+Ring durability settings
+Crafting material requirements
+Jewelry store locations
+Ring effects & buffs
+💎 Ring Abilities
+Each ring provides unique effects when worn:
 
+Sapphire Ring – Overcharges armor when fully protected.
+Aquamarine Ring – Boosts swimming speed in water.
+Citrine Ring – Reduces stress over time.
+Diamond Ring – Grants periodic speed boosts.
+Emerald Ring – Increases money earned from activities.
+Onyx Ring – Adds temporary extra health (overcharge HP).
+Ruby Ring – Provides minor health and armor regeneration.
+Tanzanite Ring – Slowly regenerates armor.
+🔹 Only one ring can be active at a time!
 
-Installation
-Add the script to your resources folder.
-Ensure ps-inventory and qb-core are installed.
-Run this SQL query to enable persistence:
-sql
-Copy
-Edit
+🏪 Jewelry Crafting & Repair
 
+🔧 Crafting:
 
+Players need wax molds, metal ingots, and polishing compound to create new rings.
+Rings start unpolished and must be polished before use.
 
+🛠️ Repairing:
 
-
-SQL
-
-CREATE TABLE IF NOT EXISTS player_rings (
-    citizenid VARCHAR(50) PRIMARY KEY,
-    ring_name VARCHAR(50) NOT NULL,
-    ring_info TEXT NOT NULL
-);
-
-
-
-
-
-
-
-Add ensure nalto-jewelry to your server.cfg.
-Restart your server and enjoy!
-Planned Features
-🔹 More ring types with unique effects.
-🔹 Customizable crafting recipes in the config.
-🔹 Additional jewelry items (necklaces, bracelets, etc.).
-
-
-
-items
+Rings lose durability over time.
+Players can repair rings at a jeweler NPC for a configurable cost.
 
     nalto_aquamarinering       = {name = 'nalto_aquamarinering', label = 'Aquamarine Ring', weight = 1000, type = 'item', image = 'nalto_aquamarinering.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'A beautiful aquamarine ring', ["decay"] = 4.0, ["delete"] = false },
     nalto_citrinering          = {name = 'nalto_citrinering', label = 'Citrine Ring', weight = 1000, type = 'item', image = 'nalto_citrinering.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'A beautiful citrine ring', ["decay"] = 4.0, ["delete"] = false },
@@ -70,7 +66,10 @@ items
     polishing_compound           = {name = 'polishing_compound', label = 'Polishing Compound', weight = 100, type = 'item', image = 'polishing_compound.png', unique = false, useable = false, shouldClose = false, combinable = nil, description = 'Compound for polishing jewelry'},
 
     
-
+🚧 Planned Features
+🔹 More ring types with unique effects.
+🔹 Customizable crafting recipes in the config.
+🔹 Additional jewelry items (necklaces, bracelets, etc.).
 
 
 
