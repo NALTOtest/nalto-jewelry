@@ -10,7 +10,7 @@ Features
 ✅ Persistence & Server Restart Safety – Rings are returned to players after a server restart, even if they logged out before the restart.
 
 
-
+..MLO NEEDS TO BE ADDED TO REPAIR/MAKE RINGS UNLESS YOU MOVE EACH LOCATION AND HASH..
 
 
 
