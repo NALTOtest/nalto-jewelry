@@ -26,7 +26,7 @@ Edit
 
 
 
-
+SQL
 
 CREATE TABLE IF NOT EXISTS player_rings (
     citizenid VARCHAR(50) PRIMARY KEY,
@@ -68,8 +68,6 @@ items
     unpolished_ring              = {name = 'unpolished_ring', label = 'Unpolished Ring', weight = 100, type = 'item', image = 'unpolished_ring.png', unique = false, useable = false, shouldClose = false, combinable = nil, description = 'An unpolished cast ring'},
     unpolished_pendant           = {name = 'unpolished_pendant', label = 'Unpolished Pendant', weight = 150, type = 'item', image = 'unpolished_pendant.png', unique = false, useable = false, shouldClose = false, combinable = nil, description = 'An unpolished cast pendant'},
     polishing_compound           = {name = 'polishing_compound', label = 'Polishing Compound', weight = 100, type = 'item', image = 'polishing_compound.png', unique = false, useable = false, shouldClose = false, combinable = nil, description = 'Compound for polishing jewelry'},
-
-
 
     
 
