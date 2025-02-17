@@ -50,7 +50,8 @@ Planned Features
 
 
 items
-nalto_aquamarinering       = {name = 'nalto_aquamarinering', label = 'Aquamarine Ring', weight = 1000, type = 'item', image = 'nalto_aquamarinering.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'A beautiful aquamarine ring', ["decay"] = 4.0, ["delete"] = false },
+
+    nalto_aquamarinering       = {name = 'nalto_aquamarinering', label = 'Aquamarine Ring', weight = 1000, type = 'item', image = 'nalto_aquamarinering.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'A beautiful aquamarine ring', ["decay"] = 4.0, ["delete"] = false },
     nalto_citrinering          = {name = 'nalto_citrinering', label = 'Citrine Ring', weight = 1000, type = 'item', image = 'nalto_citrinering.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'A beautiful citrine ring', ["decay"] = 4.0, ["delete"] = false },
     nalto_diamondring          = {name = 'nalto_diamondring', label = 'Diamond Ring', weight = 1000, type = 'item', image = 'nalto_diamondring.png', unique = false, useable = true, shouldClose = false, combinable = nil, description = 'A beautiful diamond ring', ["decay"] = 4.0, ["delete"] = false },
     nalto_emeraldring          = {name = 'nalto_emeraldring', label = 'Emerald Ring', weight = 1000, type = 'item', image = 'nalto_emeraldring.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'A beautiful emerald ring', ["decay"] = 4.0, ["delete"] = false },
@@ -70,7 +71,7 @@ nalto_aquamarinering       = {name = 'nalto_aquamarinering', label = 'Aquamarine
 
 
 
-    inspired by nopixel 3.0 rings
+    
 
 
 
